@@ -1,0 +1,31 @@
+{
+  "name": "music-metadata",
+  "version": "0.1.0",
+  "description": "Usable music metadata from file name and file contents",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peermusic/music-metadata.git"
+  },
+  "keywords": [
+    "music",
+    "metadata",
+    "ID3",
+    "parse"
+  ],
+  "author": "https://github.com/orgs/peermusic/",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peermusic/music-metadata/issues"
+  },
+  "homepage": "https://github.com/peermusic/music-metadata#readme",
+  "dependencies": {
+    "id3-parser": "https://github.com/queicherius/id3-parser/tarball/9bb3237cf2a669b367ce7616b5cf3ef20d4d1c8c"
+  },
+  "devDependencies": {
+    "rewire": "2.5.*"
+  }
+}
