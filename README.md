@@ -1,6 +1,9 @@
 # music-metadata
 
-Parsing a music file into it's metadata. We prioritize id3 v2 over id3 v1 over the file name parsing
+Parsing metadata of a music file. Data gets used in the following order:
+- ID3 v2 
+- ID3 v1
+- file name parsing
 
 ## Install
 
@@ -13,13 +16,13 @@ npm install https://github.com/peermusic/music-metadata
 ```js
 var musicMetadata = require('music-metadata')
 musicMetadata(file, function (tags) {
-  console.log(tags)
+  console.log(tags) // "tags" is an object with title, artist, album, track and year
 })
 ```
 
 For reference see the [Browserify Handbook](https://github.com/substack/browserify-handbook#how-node_modules-works).
 
-## Parsing Tests
+## Tests for parsing
 
 ```sh
 npm install -g mocha
