@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/peermusic/music-metadata#readme",
   "dependencies": {
-    "id3-parser": "https://github.com/queicherius/id3-parser/tarball/9bb3237cf2a669b367ce7616b5cf3ef20d4d1c8c"
+    "id3-parser": "git+https://github.com/creeperyang/id3-parser.git"
   },
   "devDependencies": {
     "rewire": "2.5.*"
