@@ -26,6 +26,7 @@
     "id3-parser": "git+https://github.com/creeperyang/id3-parser.git"
   },
   "devDependencies": {
+    "mocha": "^2.3.4",
     "rewire": "2.5.*",
     "standard": "^5.4.1"
   }
