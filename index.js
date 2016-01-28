@@ -27,7 +27,8 @@ function metadata (file, callback) {
     artist: null,
     album: null,
     track: null,
-    year: null
+    year: null,
+    genre: null
   }
 
   // Grab the metadata from the filename
@@ -40,7 +41,8 @@ function metadata (file, callback) {
       artist: id3_tags.artist || id3_tags.band ? id3_tags.artist || id3_tags.band : null,
       album: id3_tags.album ? id3_tags.album : null,
       track: id3_tags.track ? parseInt(id3_tags.track, 10) : null,
-      year: id3_tags.year ? parseInt(id3_tags.year, 10) : null
+      year: id3_tags.year ? parseInt(id3_tags.year, 10) : null,
+      genre: id3_tags.genre ? id3_tags.genre : null
     }
 
     // We only have a title as the id3 tag -> lets try to parse it
